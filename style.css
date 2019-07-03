@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sniglet, sans-serif;
+}
+
+body {
+    background: #2a4454;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: white;
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid white;
+    width: 200px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    font-size: 46px;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.badge {
+    background: #661b28;
+    font-size: 14px;
+    padding: 2px 10px;
+}
+
+#user-badge {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+}
+
+#comp-badge {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.result {
+    font-size: 40px;
+    color: #fff;
+}
+
+.result p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.choices {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.choice {
+    display: inline-block;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: #44545a;
+}
+
+.choice img {
+    width: 100px;
+    height: 100px;
+}
+
+.green-glow {
+    border: 3px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    border: 3px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 3px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
