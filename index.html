@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Rock Paper Scissors</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Rock Paper Scissors</title>
+    </head>
+    <body>
+        <section class="game">
+            <div class="score-board">
+                <div id="user-badge" class="badge">user</div>
+                <div id="comp-badge" class="badge">comp</div>
+                <span id="user-score">0</span> : <span id="comp-score">0</span>
+            </div>
 
-    <div class="score-board">
-        <div id="user-badge" class="badge">user</div>
-        <div id="comp-badge" class="badge">comp</div>
-        <span id="user-score">0</span> : <span id="comp-score">0</span>
-    </div>
+            <div class="intro">
+                <h1>Rock Paper Scissors</h1>
+                <button>Let's Play</button>
+            </div>
 
-    <div class="result">
-        <p>Pick an option!</p>
-    </div>
+            <div class="match fadeOut">
+                <h2 class="winner">Choose an Option</h2>
+                <div class="hands">
+                    <img class="player-hand" src="./assets/rock.png" alt="" />
+                    <img class="computer-hand" src="./assets/rock.png" alt="" />
+                </div>
+                <div class="options">
+                    <!-- <button class="rock">rock</button>
+                    <button class="paper">paper</button>
+                    <button class="scissors">scissors</button> -->
 
-    <div class="choices">
-        <div class="choice" id="rock">
-            <img src="images/rock.png" alt="">
-        </div>
-        <div class="choice" id="paper">
-            <img src="images/paper.png" alt="">
-        </div>
-        <div class="choice" id="scissors">
-            <img src="images/scissors.png" alt="">
-        </div>
-    </div>
+                    <img class="rock" id="rock" src="assets/rock-pic.png" alt="rock" />
 
-    <script src="app.js"></script>
-</body>
+                    <img class="paper" id="paper" src="assets/paper-pic.png" alt="" />
+
+                    <img class="scissors" id="scissors" src="assets/scissors-pic.png" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <script src="main.js"></script>
+    </body>
 </html>
